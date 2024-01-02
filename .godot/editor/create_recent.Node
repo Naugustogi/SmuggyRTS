@@ -1,6 +1,8 @@
 CSGBox3D
-CSGCombiner3D
 MTerrain
+HTerrain
+Node
+CSGCombiner3D
 Control
 BoxContainer
 WorldEnvironment
