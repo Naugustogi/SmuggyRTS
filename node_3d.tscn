@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://brpgm0ti573i"]
+[gd_scene load_steps=11 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cp7pck3ewe0v7" path="res://a.jpg" id="4_cwgm5"]
 [ext_resource type="Texture2D" uid="uid://yyefmppiqak6" path="res://grass.jpg" id="5_x0843"]
 [ext_resource type="Texture2D" uid="uid://ck8r1mytv3vf6" path="res://c.png" id="6_yxfs1"]
+[ext_resource type="Texture2D" uid="uid://ckivea0t4hjue" path="res://d.jpg" id="7_hkety"]
 
 [sub_resource type="MBrushLayers" id="MBrushLayers_dor76"]
 layers_title = "normal"
@@ -234,7 +235,7 @@ void fragment() {
 [sub_resource type="Resource" id="Resource_y4vng"]
 script = ExtResource("3_8450p")
 mode = 0
-textures = [[ExtResource("4_cwgm5"), ExtResource("5_x0843"), ExtResource("6_yxfs1")], [ExtResource("4_cwgm5"), ExtResource("5_x0843"), ExtResource("6_yxfs1")]]
+textures = [[ExtResource("4_cwgm5"), ExtResource("5_x0843"), ExtResource("6_yxfs1"), ExtResource("7_hkety")], [ExtResource("4_cwgm5"), ExtResource("5_x0843"), ExtResource("6_yxfs1"), ExtResource("7_hkety")]]
 metadata/layer = false
 
 [node name="Node3D" type="Node3D"]
