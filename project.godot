@@ -64,4 +64,4 @@ scroll_press={
 }
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/zylann.hterrain/plugin.cfg")
+enabled=PackedStringArray("res://addons/m_terrain/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
