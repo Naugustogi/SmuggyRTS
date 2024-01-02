@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://8wrwqsd2budv"]
+[gd_scene load_steps=5 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
