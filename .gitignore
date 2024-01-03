@@ -1,2 +1,5 @@
 # Godot 4+ specific ignores
 .godot/
+.vscode/
+addons/godot-git-plugin/win64/*.dll
+addons/m_terrain/libs/*.dll

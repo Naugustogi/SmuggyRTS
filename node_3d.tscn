@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://brpgm0ti573i"]
+[gd_scene load_steps=24 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
+[ext_resource type="Script" path="res://units/BaseUnit.gd" id="1_g7n6u"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="3_8450p"]
 [ext_resource type="Script" path="res://Player.gd" id="4_bb8fh"]
@@ -10,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dyd41crfprkdq" path="res://textures/d.jpg" id="7_hkety"]
 [ext_resource type="PackedScene" uid="uid://cxky0bkbhr6ie" path="res://buildings/bluemain.glb" id="8_8eoc1"]
 [ext_resource type="PackedScene" uid="uid://bgt3u5h76lrks" path="res://buildings/bluerecource patch.glb" id="10_hwm1u"]
-[ext_resource type="PackedScene" uid="uid://b7eotb2ovkr64" path="res://units/tank.glb" id="11_tdbw4"]
 [ext_resource type="PackedScene" uid="uid://dhhccov57y5ae" path="res://units/bigtank.glb" id="12_406il"]
 [ext_resource type="PackedScene" uid="uid://byfwj0n8b6u1c" path="res://buildings/bluepower.glb" id="13_xb4ix"]
 [ext_resource type="PackedScene" uid="uid://dk27kudp7oerv" path="res://buildings/bluevision.glb" id="14_wdg8o"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://xnugfb27j537" path="res://buildings/blueattackbuildingair.glb" id="17_nsi1b"]
 [ext_resource type="PackedScene" uid="uid://dohscwu5ki410" path="res://buildings/bluenukebuilding.glb" id="18_elsp4"]
 [ext_resource type="PackedScene" uid="uid://d30mkp3s7m1c" path="res://buildings/bluerecourcebuilding.glb" id="19_1d8dt"]
+[ext_resource type="PackedScene" uid="uid://byifj507pr8ex" path="res://units/tank_unit_new.tscn" id="21_yyg5l"]
 
 [sub_resource type="MBrushLayers" id="MBrushLayers_dor76"]
 layers_title = "normal"
@@ -249,7 +250,8 @@ mode = 0
 textures = [[ExtResource("4_cwgm5"), ExtResource("5_x0843"), ExtResource("6_yxfs1"), ExtResource("7_hkety")], [ExtResource("4_cwgm5"), ExtResource("5_x0843"), ExtResource("6_yxfs1"), ExtResource("7_hkety")]]
 metadata/layer = false
 
-[node name="Node3D" type="Node3D"]
+[node name="Main" type="Node3D"]
+script = ExtResource("1_g7n6u")
 
 [node name="MTerrain" type="MTerrain" parent="."]
 dataDir = "res://"
@@ -377,18 +379,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 234.678, 0, -280.012)
 [node name="recource patch20" parent="." instance=ExtResource("10_hwm1u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 243.91, 0, -277.576)
 
-[node name="tank5" parent="." instance=ExtResource("11_tdbw4")]
-transform = Transform3D(0.723714, 0, 0.6901, 0, 1, 0, -0.6901, 0, 0.723714, 327.185, 0, -247.549)
-
-[node name="tank" parent="." instance=ExtResource("11_tdbw4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 326.991, 0, -214.373)
-
-[node name="tank2" parent="." instance=ExtResource("11_tdbw4")]
-transform = Transform3D(0.860431, 0, 0.509567, 0, 1, 0, -0.509567, 0, 0.860431, 303.536, 0, -271.175)
-
-[node name="tank3" parent="." instance=ExtResource("11_tdbw4")]
-transform = Transform3D(0.352675, 0, 0.935746, 0, 1, 0, -0.935746, 0, 0.352675, 263.356, 0, -305.071)
-
 [node name="bigtank" parent="." instance=ExtResource("12_406il")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 343.898, 1.19209e-07, -183.382)
 
@@ -421,3 +411,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 278.383, 3.98176, -261.185)
 
 [node name="bluerecourcebuilding3" parent="." instance=ExtResource("19_1d8dt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 237.089, 3.98176, -292.948)
+
+[node name="TankUnit" parent="." instance=ExtResource("21_yyg5l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 294.425, 0, -295.39)
+
+[node name="TankUnit2" parent="." instance=ExtResource("21_yyg5l")]
+transform = Transform3D(0.843888, 0, 0.536519, 0, 1, 0, -0.536519, 0, 0.843888, 278.497, 0, -309.342)
+
+[node name="TankUnit3" parent="." instance=ExtResource("21_yyg5l")]
+transform = Transform3D(0.850949, 0, 0.525249, 0, 1, 0, -0.525249, 0, 0.850949, 305.955, 0, -267.507)
+
+[node name="TankUnit4" parent="." instance=ExtResource("21_yyg5l")]
+transform = Transform3D(0.90479, 0, 0.425858, 0, 1, 0, -0.425858, 0, 0.90479, 323.808, 0, -242.787)
+
+[node name="TankUnit5" parent="." instance=ExtResource("21_yyg5l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 271.736, 0, -286.858)

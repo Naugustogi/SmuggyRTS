@@ -12,11 +12,45 @@ func _is_near_ground(currCamera):
 		return result.position.y
 	else:
 		return 0
-	 
 	
 var currentMousePos = Vector2(0, 0)
 var pressed = false
 var currentRotation = 0
+var selected_unit = null
+	 
+func _select_unit():
+	var space_state = get_world_3d().direct_space_state
+	var mousepos = get_viewport().get_mouse_position()
+	var camera3d = cameraPivot.get_node("Camera3D")
+	var from = camera3d.project_ray_origin(mousepos)
+	var to = from + camera3d.project_ray_normal(mousepos) * 1000.0
+	var query = PhysicsRayQueryParameters3D.create(from, to)
+
+	var result = space_state.intersect_ray(query)
+	if selected_unit:
+		selected_unit.unselect()
+		selected_unit = null
+	if result and result.collider:
+		print(result.collider.name)
+		print(result.collider.is_in_group("unit"))
+		if result.collider.is_in_group("unit") and result.collider != selected_unit:
+			result.collider.select()
+			selected_unit = result.collider
+			
+func _move_unit():
+	if !selected_unit:
+		return
+	var space_state = get_world_3d().direct_space_state
+	var mousepos = get_viewport().get_mouse_position()
+	var camera3d = cameraPivot.get_node("Camera3D")
+	var from = camera3d.project_ray_origin(mousepos)
+	var to = from + camera3d.project_ray_normal(mousepos) * 1000.0
+	var query = PhysicsRayQueryParameters3D.create(from, to)
+	var result = space_state.intersect_ray(query)
+	if !result or !result.collider or result.collider.name != "HTerrain":
+		return
+	selected_unit.look_at(result.position, Vector3.UP)
+	selected_unit.position = result.position
 
 func _physics_process(delta):
 	# We create a local variable to store the input direction.
@@ -56,6 +90,11 @@ func _physics_process(delta):
 		
 	if Input.is_action_just_released("scroll_press"):
 		pressed = false
+	if Input.is_action_just_pressed("lmb"):
+		_select_unit()
+	
+	if Input.is_action_pressed("rmb"):
+		_move_unit()
 	
 	if pressed:
 		cameraPivot.rotation.y = currentRotation + (currentMousePos.x - get_viewport().get_mouse_position().x) / 100

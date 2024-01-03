@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://byifj507pr8ex"]
+
+[ext_resource type="Script" path="res://units/BaseUnit.gd" id="1_0xup3"]
+[ext_resource type="PackedScene" uid="uid://b7eotb2ovkr64" path="res://units/tank.glb" id="2_dfbjp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2lpcu"]
+size = Vector3(10.8528, 5.21716, 9.77017)
+
+[node name="TankUnit" type="StaticBody3D" groups=["unit"]]
+transform = Transform3D(1, 0.000121252, 0.000669719, -0.000121259, 1, 9.81628e-06, -0.000669718, -9.89985e-06, 1, 0, 0, 0)
+script = ExtResource("1_0xup3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-2.95113e-08, -0.000111443, -1, -0.000131076, 1, -0.000111443, 1, 0.000131075, -4.41214e-08, 0.0162761, 2.1087, -1.01432)
+shape = SubResource("BoxShape3D_2lpcu")
+
+[node name="tank" parent="." instance=ExtResource("2_dfbjp")]
+transform = Transform3D(-2.96277e-08, -0.000111443, -1, -0.000131076, 1, -0.000111443, 1, 0.000131075, -4.42378e-08, -3.90972, -0.000322595, -0.945158)
