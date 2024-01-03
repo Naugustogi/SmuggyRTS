@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://brpgm0ti573i"]
+[gd_scene load_steps=19 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
@@ -14,6 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://dsvbom48joo80" path="res://buildings/recource patch.glb" id="10_hwm1u"]
 [ext_resource type="PackedScene" uid="uid://b7eotb2ovkr64" path="res://units/tank.glb" id="11_tdbw4"]
 [ext_resource type="PackedScene" uid="uid://dhhccov57y5ae" path="res://units/bigtank.glb" id="12_406il"]
+[ext_resource type="PackedScene" uid="uid://byfwj0n8b6u1c" path="res://buildings/bluepower.glb" id="13_xb4ix"]
+[ext_resource type="PackedScene" uid="uid://dk27kudp7oerv" path="res://buildings/bluevision.glb" id="14_wdg8o"]
+[ext_resource type="PackedScene" uid="uid://xm3tnddkdwgf" path="res://buildings/blueattackbuilding.glb" id="15_5upf3"]
 
 [sub_resource type="MBrushLayers" id="MBrushLayers_dor76"]
 layers_title = "normal"
@@ -312,7 +315,7 @@ transform = Transform3D(1, 0, 0, 0, 0.333807, 0.942641, 0, -0.942641, 0.333807, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 287.428, 4.86316, -231.758)
 
 [node name="main" parent="." instance=ExtResource("9_f332p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 339.793, 1.90735e-06, -306.419)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 339.793, 8.69763, -306.419)
 
 [node name="recource patch" parent="." instance=ExtResource("10_hwm1u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 264.869, 0.650242, -238.075)
@@ -394,3 +397,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 272.66, 5.39384, -267.901)
 
 [node name="recourcebuilding3" parent="." instance=ExtResource("8_8eoc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 236.316, 5.00341, -295.874)
+
+[node name="bluepower" parent="." instance=ExtResource("13_xb4ix")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 354.028, 4.12069, -248.804)
+
+[node name="bluevision" parent="." instance=ExtResource("14_wdg8o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 360.448, 12.7369, -149.611)
+
+[node name="blueattackbuilding" parent="." instance=ExtResource("15_5upf3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 314.487, 3.5272, -206.106)
