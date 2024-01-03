@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cgxkhr76hgvgy"
-path="res://.godot/imported/recourcebuilding.glb-d8b46c39fc4c37cd19397f1605e40d97.scn"
+uid="uid://dsvbom48joo80"
+path="res://.godot/imported/recource patch.glb-3f931bc5d1cf90ebf96a8e52c1ffd4a4.scn"
 
 [deps]
 
-source_file="res://units/recourcebuilding.glb"
-dest_files=["res://.godot/imported/recourcebuilding.glb-d8b46c39fc4c37cd19397f1605e40d97.scn"]
+source_file="res://buildings/recource patch.glb"
+dest_files=["res://.godot/imported/recource patch.glb-3f931bc5d1cf90ebf96a8e52c1ffd4a4.scn"]
 
 [params]
 

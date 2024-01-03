@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bflrlgxt0c1cq"
-path="res://.godot/imported/tank.glb-a1e5071d24f66a35de5abeba3f2d4d9c.scn"
+uid="uid://ckujqbl6vvnx7"
+path="res://.godot/imported/main.glb-0b62607848ca76919b17839365e1ec31.scn"
 
 [deps]
 
-source_file="res://das/tank.glb"
-dest_files=["res://.godot/imported/tank.glb-a1e5071d24f66a35de5abeba3f2d4d9c.scn"]
+source_file="res://buildings/main.glb"
+dest_files=["res://.godot/imported/main.glb-0b62607848ca76919b17839365e1ec31.scn"]
 
 [params]
 

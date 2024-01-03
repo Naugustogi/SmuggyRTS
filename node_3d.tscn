@@ -1,13 +1,19 @@
-[gd_scene load_steps=11 format=3 uid="uid://brpgm0ti573i"]
+[gd_scene load_steps=16 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="3_8450p"]
 [ext_resource type="Script" path="res://Player.gd" id="4_bb8fh"]
 [ext_resource type="Texture2D" uid="uid://cp7pck3ewe0v7" path="res://a.jpg" id="4_cwgm5"]
+[ext_resource type="Texture2D" path="res://a.jpg" id="4_cwgm5"]
 [ext_resource type="Texture2D" uid="uid://yyefmppiqak6" path="res://grass.jpg" id="5_x0843"]
-[ext_resource type="Texture2D" uid="uid://ck8r1mytv3vf6" path="res://c.png" id="6_yxfs1"]
-[ext_resource type="Texture2D" uid="uid://ckivea0t4hjue" path="res://d.jpg" id="7_hkety"]
+[ext_resource type="Texture2D" path="res://c.png" id="6_yxfs1"]
+[ext_resource type="Texture2D" path="res://d.jpg" id="7_hkety"]
+[ext_resource type="PackedScene" uid="uid://cgxkhr76hgvgy" path="res://buildings/recourcebuilding.glb" id="8_8eoc1"]
+[ext_resource type="PackedScene" uid="uid://ckujqbl6vvnx7" path="res://buildings/main.glb" id="9_f332p"]
+[ext_resource type="PackedScene" uid="uid://dsvbom48joo80" path="res://buildings/recource patch.glb" id="10_hwm1u"]
+[ext_resource type="PackedScene" uid="uid://b7eotb2ovkr64" path="res://units/tank.glb" id="11_tdbw4"]
+[ext_resource type="PackedScene" uid="uid://dhhccov57y5ae" path="res://units/bigtank.glb" id="12_406il"]
 
 [sub_resource type="MBrushLayers" id="MBrushLayers_dor76"]
 layers_title = "normal"
@@ -281,10 +287,6 @@ size = Vector3(30, 1, 30)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.1098, 1.5108, 72.1026)
 size = Vector3(30, 1, 30)
 
-[node name="recource5" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 257.164, 1.0072, -235.392)
-size = Vector3(30, 1, 30)
-
 [node name="recource6" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98.3407, 2.0144, -34.1416)
 size = Vector3(30, 1, 30)
@@ -306,3 +308,89 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 150, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(1, 0, 0, 0, 0.333807, 0.942641, 0, -0.942641, 0.333807, 0, 0, 0)
+[node name="recourcebuilding" parent="." instance=ExtResource("8_8eoc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 287.428, 4.86316, -231.758)
+
+[node name="main" parent="." instance=ExtResource("9_f332p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 339.793, 1.90735e-06, -306.419)
+
+[node name="recource patch" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 264.869, 0.650242, -238.075)
+
+[node name="recource patch2" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 270.198, 1.90735e-06, -237.724)
+
+[node name="recource patch3" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 257.804, 0, -237.803)
+
+[node name="recource patch4" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 261.177, 0, -244.485)
+
+[node name="recource patch5" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 253.235, 0, -244.371)
+
+[node name="recource patch6" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 251.421, 9.53674e-07, -252.48)
+
+[node name="recource patch7" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 259.684, 0, -251.972)
+
+[node name="recource patch8" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 268.568, -1.90735e-06, -245.213)
+
+[node name="recource patch9" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 267.757, 0, -251.894)
+
+[node name="recource patch10" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 242.121, 0, -250.837)
+
+[node name="recource patch11" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 234.855, 2.38419e-07, -259.522)
+
+[node name="recource patch12" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 243.787, 0, -260.192)
+
+[node name="recource patch13" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 252.448, -1.90735e-06, -260.749)
+
+[node name="recource patch14" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 260.003, 0, -260.84)
+
+[node name="recource patch15" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 237.003, 0, -270.728)
+
+[node name="recource patch16" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 247.6, 0, -269.101)
+
+[node name="recource patch17" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 229.157, 0, -269.384)
+
+[node name="recource patch18" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 225.768, 0, -282.416)
+
+[node name="recource patch19" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 234.678, 0, -280.012)
+
+[node name="recource patch20" parent="." instance=ExtResource("10_hwm1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 243.91, 0, -277.576)
+
+[node name="tank5" parent="." instance=ExtResource("11_tdbw4")]
+transform = Transform3D(0.723714, 0, 0.6901, 0, 1, 0, -0.6901, 0, 0.723714, 327.185, 0, -247.549)
+
+[node name="tank" parent="." instance=ExtResource("11_tdbw4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 326.991, 0, -214.373)
+
+[node name="tank2" parent="." instance=ExtResource("11_tdbw4")]
+transform = Transform3D(0.860431, 0, 0.509567, 0, 1, 0, -0.509567, 0, 0.860431, 303.536, 0, -271.175)
+
+[node name="tank3" parent="." instance=ExtResource("11_tdbw4")]
+transform = Transform3D(0.352675, 0, 0.935746, 0, 1, 0, -0.935746, 0, 0.352675, 263.356, 0, -305.071)
+
+[node name="bigtank" parent="." instance=ExtResource("12_406il")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 343.898, 1.19209e-07, -183.382)
+
+[node name="recourcebuilding2" parent="." instance=ExtResource("8_8eoc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 272.66, 5.39384, -267.901)
+
+[node name="recourcebuilding3" parent="." instance=ExtResource("8_8eoc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 236.316, 5.00341, -295.874)
