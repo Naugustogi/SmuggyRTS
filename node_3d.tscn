@@ -390,13 +390,13 @@ transform = Transform3D(0.860431, 0, 0.509567, 0, 1, 0, -0.509567, 0, 0.860431, 
 transform = Transform3D(0.352675, 0, 0.935746, 0, 1, 0, -0.935746, 0, 0.352675, 263.356, 0, -305.071)
 
 [node name="bigtank" parent="." instance=ExtResource("12_406il")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 343.898, 1.19209e-07, -183.382)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 341.312, 6.25758, -175.197)
 
 [node name="bluepower" parent="." instance=ExtResource("13_xb4ix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 354.028, 4.12069, -248.804)
 
 [node name="bluevision" parent="." instance=ExtResource("14_wdg8o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 360.448, 12.7369, -149.611)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 376.347, 12.7369, -262.044)
 
 [node name="blueattackbuilding" parent="." instance=ExtResource("15_5upf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 314.487, 3.5272, -206.106)
