@@ -1,17 +1,15 @@
-[gd_scene load_steps=22 format=3 uid="uid://brpgm0ti573i"]
+[gd_scene load_steps=23 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="3_8450p"]
 [ext_resource type="Script" path="res://Player.gd" id="4_bb8fh"]
-[ext_resource type="Texture2D" uid="uid://cp7pck3ewe0v7" path="res://a.jpg" id="4_cwgm5"]
-[ext_resource type="Texture2D" path="res://a.jpg" id="4_cwgm5"]
+[ext_resource type="Texture2D" uid="uid://cuummrbrakjqr" path="res://textures/a.jpg" id="4_cwgm5"]
 [ext_resource type="Texture2D" uid="uid://yyefmppiqak6" path="res://grass.jpg" id="5_x0843"]
-[ext_resource type="Texture2D" path="res://c.png" id="6_yxfs1"]
-[ext_resource type="Texture2D" path="res://d.jpg" id="7_hkety"]
-[ext_resource type="PackedScene" uid="uid://cgxkhr76hgvgy" path="res://buildings/recourcebuilding.glb" id="8_8eoc1"]
-[ext_resource type="PackedScene" uid="uid://ckujqbl6vvnx7" path="res://buildings/main.glb" id="9_f332p"]
-[ext_resource type="PackedScene" uid="uid://dsvbom48joo80" path="res://buildings/recource patch.glb" id="10_hwm1u"]
+[ext_resource type="Texture2D" uid="uid://3dqs83m1ewkw" path="res://textures/c.png" id="6_yxfs1"]
+[ext_resource type="Texture2D" uid="uid://dyd41crfprkdq" path="res://textures/d.jpg" id="7_hkety"]
+[ext_resource type="PackedScene" uid="uid://cxky0bkbhr6ie" path="res://buildings/bluemain.glb" id="8_8eoc1"]
+[ext_resource type="PackedScene" uid="uid://bgt3u5h76lrks" path="res://buildings/bluerecource patch.glb" id="10_hwm1u"]
 [ext_resource type="PackedScene" uid="uid://b7eotb2ovkr64" path="res://units/tank.glb" id="11_tdbw4"]
 [ext_resource type="PackedScene" uid="uid://dhhccov57y5ae" path="res://units/bigtank.glb" id="12_406il"]
 [ext_resource type="PackedScene" uid="uid://byfwj0n8b6u1c" path="res://buildings/bluepower.glb" id="13_xb4ix"]
@@ -20,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://cvayykhxd0e37" path="res://buildings/blueresearch.glb" id="16_5d0ar"]
 [ext_resource type="PackedScene" uid="uid://xnugfb27j537" path="res://buildings/blueattackbuildingair.glb" id="17_nsi1b"]
 [ext_resource type="PackedScene" uid="uid://dohscwu5ki410" path="res://buildings/bluenukebuilding.glb" id="18_elsp4"]
+[ext_resource type="PackedScene" uid="uid://d30mkp3s7m1c" path="res://buildings/bluerecourcebuilding.glb" id="19_1d8dt"]
 
 [sub_resource type="MBrushLayers" id="MBrushLayers_dor76"]
 layers_title = "normal"
@@ -314,10 +313,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 150, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(1, 0, 0, 0, 0.333807, 0.942641, 0, -0.942641, 0.333807, 0, 0, 0)
-[node name="recourcebuilding" parent="." instance=ExtResource("8_8eoc1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 287.428, 4.86316, -231.758)
 
-[node name="main" parent="." instance=ExtResource("9_f332p")]
+[node name="main" parent="." instance=ExtResource("8_8eoc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 339.793, 8.69763, -306.419)
 
 [node name="recource patch" parent="." instance=ExtResource("10_hwm1u")]
@@ -395,12 +392,6 @@ transform = Transform3D(0.352675, 0, 0.935746, 0, 1, 0, -0.935746, 0, 0.352675, 
 [node name="bigtank" parent="." instance=ExtResource("12_406il")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 343.898, 1.19209e-07, -183.382)
 
-[node name="recourcebuilding2" parent="." instance=ExtResource("8_8eoc1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 272.66, 5.39384, -267.901)
-
-[node name="recourcebuilding3" parent="." instance=ExtResource("8_8eoc1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 236.316, 5.00341, -295.874)
-
 [node name="bluepower" parent="." instance=ExtResource("13_xb4ix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 354.028, 4.12069, -248.804)
 
@@ -421,3 +412,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 357.986, 0, -201.501)
 
 [node name="bluenukebuilding" parent="." instance=ExtResource("18_elsp4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 312.803, 0, -204.304)
+
+[node name="bluerecourcebuilding" parent="." instance=ExtResource("19_1d8dt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 291.65, 3.98176, -231.648)
+
+[node name="bluerecourcebuilding2" parent="." instance=ExtResource("19_1d8dt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 278.383, 3.98176, -261.185)
+
+[node name="bluerecourcebuilding3" parent="." instance=ExtResource("19_1d8dt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 237.089, 3.98176, -292.948)
