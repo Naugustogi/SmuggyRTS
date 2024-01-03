@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1704252276
+::res://::1704254024
 data.hterrain::Resource::-1::1704194847::0::1::::<><>::
 detail.png::CompressedTexture2D::5880474187548543354::1704193951::1704193953::1::::<><>::
 grass.jpg::CompressedTexture2D::1734329764495921427::1704193808::1704193840::1::::<><>::
 height.res::Image::5486039527397188446::1704193951::0::1::::<><>::
 heightmap_x0_y0.res::Image::9029704546373991653::1704171370::0::1::::<><>::
 icon.svg::CompressedTexture2D::531739534952629722::1704160841::1704191736::1::::<><>::
-node_3d.tscn::PackedScene::106205404887467856::1704252276::0::1::::<><>::res://addons/zylann.hterrain/hterrain.gd<>res://data.hterrain<>res://addons/zylann.hterrain/hterrain_texture_set.gd<>res://a.jpg<>uid://yyefmppiqak6::::res://grass.jpg<>res://c.png<>res://d.jpg<>uid://cgxkhr76hgvgy::::res://buildings/recourcebuilding.glb<>uid://ckujqbl6vvnx7::::res://buildings/main.glb<>uid://dsvbom48joo80::::res://buildings/recource patch.glb<>uid://b7eotb2ovkr64::::res://units/tank.glb<>uid://dhhccov57y5ae::::res://units/bigtank.glb
+node_3d.tscn::PackedScene::106205404887467856::1704254024::0::1::::<><>::res://addons/zylann.hterrain/hterrain.gd<>res://data.hterrain<>res://addons/zylann.hterrain/hterrain_texture_set.gd<>res://a.jpg<>uid://yyefmppiqak6::::res://grass.jpg<>res://c.png<>res://d.jpg<>uid://cgxkhr76hgvgy::::res://buildings/recourcebuilding.glb<>uid://ckujqbl6vvnx7::::res://buildings/main.glb<>uid://dsvbom48joo80::::res://buildings/recource patch.glb<>uid://b7eotb2ovkr64::::res://units/tank.glb<>uid://dhhccov57y5ae::::res://units/bigtank.glb<>uid://byfwj0n8b6u1c::::res://buildings/bluepower.glb<>uid://dk27kudp7oerv::::res://buildings/bluevision.glb<>uid://xm3tnddkdwgf::::res://buildings/blueattackbuilding.glb<>uid://cvayykhxd0e37::::res://buildings/blueresearch.glb<>uid://xnugfb27j537::::res://buildings/blueattackbuildingair.glb
 normal.png::CompressedTexture2D::5796499215851831528::1704193951::1704193975::1::::<><>::
 Player.gd::GDScript::-1::1704191755::0::1::::<>CharacterBody3D<>::
 README.md::TextFile::-1::1704191736::0::1::::<><>::
@@ -364,12 +364,15 @@ image_file_cache.gd::GDScript::-1::1704171370::0::1::::<>RefCounted<>::
 logger.gd::GDScript::-1::1704171370::0::1::::<>RefCounted<>::
 util.gd::GDScript::-1::1704171370::0::1::::<>RefCounted<>::
 xyz_format.gd::GDScript::-1::1704171370::0::1::::<>RefCounted<>::
-::res://buildings/::1704253568
-blueattackbuilding.glb::PackedScene::1640850630192894465::1704253568::1704253573::1::::<><>::
+::res://buildings/::1704254033
+blueattackbuilding.glb::PackedScene::1640850630192894465::1704253816::1704253818::1::::<><>::
+blueattackbuildingair.glb::PackedScene::1642405634527744312::1704253860::1704253861::1::::<><>::
 bluemain.glb::PackedScene::6409330469302450600::1704250562::1704253359::1::::<><>::
+bluenukebuilding.glb::PackedScene::8157454171534347553::1704254037::1704254039::1::::<><>::
 bluepower.glb::PackedScene::4082628000430342190::1704253447::1704253450::1::::<><>::
 bluerecource patch.glb::PackedScene::2848514302533937586::1704251318::1704253359::1::::<><>::
 bluerecourcebuilding.glb::PackedScene::269909012076877318::1704251429::1704253359::1::::<><>::
+blueresearch.glb::PackedScene::6248307687762139136::1704253723::1704253752::1::::<><>::
 bluevision.glb::PackedScene::7918850544353082487::1704253529::1704253535::1::::<><>::
 ::res://textures/::1704249640
 a.jpg::CompressedTexture2D::6218656723882664709::1704193721::1704249144::1::::<><>::

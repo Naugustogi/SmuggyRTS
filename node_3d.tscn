@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://brpgm0ti573i"]
+[gd_scene load_steps=22 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
@@ -17,6 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://byfwj0n8b6u1c" path="res://buildings/bluepower.glb" id="13_xb4ix"]
 [ext_resource type="PackedScene" uid="uid://dk27kudp7oerv" path="res://buildings/bluevision.glb" id="14_wdg8o"]
 [ext_resource type="PackedScene" uid="uid://xm3tnddkdwgf" path="res://buildings/blueattackbuilding.glb" id="15_5upf3"]
+[ext_resource type="PackedScene" uid="uid://cvayykhxd0e37" path="res://buildings/blueresearch.glb" id="16_5d0ar"]
+[ext_resource type="PackedScene" uid="uid://xnugfb27j537" path="res://buildings/blueattackbuildingair.glb" id="17_nsi1b"]
+[ext_resource type="PackedScene" uid="uid://dohscwu5ki410" path="res://buildings/bluenukebuilding.glb" id="18_elsp4"]
 
 [sub_resource type="MBrushLayers" id="MBrushLayers_dor76"]
 layers_title = "normal"
@@ -406,3 +409,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 360.448, 12.7369, -149.611)
 
 [node name="blueattackbuilding" parent="." instance=ExtResource("15_5upf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 314.487, 3.5272, -206.106)
+
+[node name="blueresearch" parent="." instance=ExtResource("16_5d0ar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 355.777, 6.55061, -221.117)
+
+[node name="blueattackbuilding2" parent="." instance=ExtResource("15_5upf3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 366.094, -1.90735e-06, -212.263)
+
+[node name="blueattackbuildingair" parent="." instance=ExtResource("17_nsi1b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 357.986, 0, -201.501)
+
+[node name="bluenukebuilding" parent="." instance=ExtResource("18_elsp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 312.803, 0, -204.304)
