@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://brpgm0ti573i"]
+[gd_scene load_steps=30 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
@@ -24,7 +24,8 @@
 [ext_resource type="PackedScene" uid="uid://bpufyie64oy1l" path="res://buildings/redbuildings/redrecourcebuilding.glb" id="22_bokyl"]
 [ext_resource type="PackedScene" uid="uid://bwe3hyloy8jes" path="res://units/redunits/redbigtank.glb" id="23_swv6k"]
 [ext_resource type="PackedScene" uid="uid://dbyt7ndiko87a" path="res://units/redunits/redtankdouble.glb" id="24_p2dec"]
-[ext_resource type="PackedScene" path="res://units/blueunits/bluetank.glb" id="25_knsyc"]
+[ext_resource type="PackedScene" uid="uid://cr8uufmbomsoi" path="res://units/blueunits/bluetank.glb" id="25_knsyc"]
+[ext_resource type="PackedScene" uid="uid://c84b0hn8dova1" path="res://animationtest/nanachi.glb" id="26_71kau"]
 
 [sub_resource type="MBrushLayers" id="MBrushLayers_dor76"]
 layers_title = "normal"
@@ -762,3 +763,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 299.132, 1.71661e-05, 95.5793
 
 [node name="blueattackbuilding29" parent="." instance=ExtResource("15_5upf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 326.596, 0.233547, 62.1738)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("26_71kau")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.0702, 0, 5.20272)
