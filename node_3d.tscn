@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://brpgm0ti573i"]
+[gd_scene load_steps=31 format=3 uid="uid://brpgm0ti573i"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_5vqvb"]
 [ext_resource type="Resource" path="res://data.hterrain" id="2_ebtfx"]
@@ -25,7 +25,8 @@
 [ext_resource type="PackedScene" uid="uid://bwe3hyloy8jes" path="res://units/redunits/redbigtank.glb" id="23_swv6k"]
 [ext_resource type="PackedScene" uid="uid://dbyt7ndiko87a" path="res://units/redunits/redtankdouble.glb" id="24_p2dec"]
 [ext_resource type="PackedScene" uid="uid://cr8uufmbomsoi" path="res://units/blueunits/bluetank.glb" id="25_knsyc"]
-[ext_resource type="PackedScene" uid="uid://c84b0hn8dova1" path="res://animationtest/nanachi.glb" id="26_71kau"]
+[ext_resource type="PackedScene" uid="uid://ceyxryu00g6os" path="res://animationtest/Nanachi.glb" id="26_71kau"]
+[ext_resource type="PackedScene" uid="uid://b7u6fa5ncxr2q" path="res://model/gun.glb" id="27_o1yje"]
 
 [sub_resource type="MBrushLayers" id="MBrushLayers_dor76"]
 layers_title = "normal"
@@ -766,3 +767,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 326.596, 0.233547, 62.1738)
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("26_71kau")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.0702, 0, 5.20272)
+
+[node name="gun" parent="." instance=ExtResource("27_o1yje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.4757, 0, 6.90643)
